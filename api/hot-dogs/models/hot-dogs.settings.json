@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hot_dogs",
+  "info": {
+    "name": "Hot-Dogs",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hotDogName": {
+      "type": "string",
+      "required": true
+    },
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "urlFood": {
+      "type": "uid",
+      "targetField": "hotDogName",
+      "required": true
+    },
+    "category": {
+      "model": "categories"
+    },
+    "price": {
+      "type": "biginteger",
+      "required": true
+    },
+    "review_hot_dogs": {
+      "via": "hot_dog",
+      "collection": "review-hot-dogs"
+    }
+  }
+}

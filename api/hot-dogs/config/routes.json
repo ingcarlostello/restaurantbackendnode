@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/hot-dogs",
+      "handler": "hot-dogs.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hot-dogs/count",
+      "handler": "hot-dogs.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hot-dogs/:id",
+      "handler": "hot-dogs.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/hot-dogs",
+      "handler": "hot-dogs.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/hot-dogs/:id",
+      "handler": "hot-dogs.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/hot-dogs/:id",
+      "handler": "hot-dogs.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

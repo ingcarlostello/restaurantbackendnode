@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/potatoes",
+      "handler": "potatoes.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/potatoes/count",
+      "handler": "potatoes.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/potatoes/:id",
+      "handler": "potatoes.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/potatoes",
+      "handler": "potatoes.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/potatoes/:id",
+      "handler": "potatoes.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/potatoes/:id",
+      "handler": "potatoes.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

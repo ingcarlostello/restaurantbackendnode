@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chickens",
+  "info": {
+    "name": "Chicken",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "chickenName": {
+      "type": "string",
+      "required": true
+    },
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "urlFood": {
+      "type": "uid",
+      "required": true
+    },
+    "price": {
+      "type": "biginteger"
+    },
+    "category": {
+      "model": "categories"
+    },
+    "review_chikens": {
+      "via": "chicken",
+      "collection": "review-chiken"
+    }
+  }
+}

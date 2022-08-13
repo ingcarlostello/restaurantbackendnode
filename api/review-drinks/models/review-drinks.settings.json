@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "review_drinks",
+  "info": {
+    "name": "ReviewDrinks",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "value": {
+      "type": "decimal"
+    },
+    "clientName": {
+      "type": "string"
+    },
+    "drink": {
+      "via": "review_drinks",
+      "model": "drinks"
+    }
+  }
+}

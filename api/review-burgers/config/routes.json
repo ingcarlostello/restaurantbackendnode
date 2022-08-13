@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/review-burgers",
+      "handler": "review-burgers.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/review-burgers/count",
+      "handler": "review-burgers.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/review-burgers/:id",
+      "handler": "review-burgers.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/review-burgers",
+      "handler": "review-burgers.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/review-burgers/:id",
+      "handler": "review-burgers.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/review-burgers/:id",
+      "handler": "review-burgers.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "burgers",
+  "info": {
+    "name": "Burgers",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "burgerName": {
+      "type": "string",
+      "required": true
+    },
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "urlFood": {
+      "type": "uid",
+      "targetField": "burgerName",
+      "required": true
+    },
+    "price": {
+      "type": "integer",
+      "required": true
+    },
+    "review_burgers": {
+      "collection": "review-burgers",
+      "via": "burger"
+    },
+    "category": {
+      "model": "categories"
+    }
+  }
+}

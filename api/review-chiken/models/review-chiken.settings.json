@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "review_chikens",
+  "info": {
+    "name": "ReviewChiken"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "value": {
+      "type": "decimal"
+    },
+    "clientName": {
+      "type": "string"
+    },
+    "chicken": {
+      "via": "review_chikens",
+      "model": "chicken"
+    }
+  }
+}

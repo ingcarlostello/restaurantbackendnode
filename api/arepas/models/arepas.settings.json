@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "arepas",
+  "info": {
+    "name": "Arepas",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "arepaName": {
+      "type": "string",
+      "required": true
+    },
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "urlFood": {
+      "type": "uid",
+      "targetField": "arepaName",
+      "required": true
+    },
+    "price": {
+      "type": "integer",
+      "required": true
+    },
+    "review_arepas": {
+      "via": "arepa",
+      "collection": "review-arepas"
+    },
+    "category": {
+      "model": "categories"
+    }
+  }
+}

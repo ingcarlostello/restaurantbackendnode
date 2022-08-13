@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/review-potatoes",
+      "handler": "review-potatoes.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/review-potatoes/count",
+      "handler": "review-potatoes.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/review-potatoes/:id",
+      "handler": "review-potatoes.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/review-potatoes",
+      "handler": "review-potatoes.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/review-potatoes/:id",
+      "handler": "review-potatoes.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/review-potatoes/:id",
+      "handler": "review-potatoes.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

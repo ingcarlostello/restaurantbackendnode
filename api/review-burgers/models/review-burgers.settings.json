@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "review_burgers",
+  "info": {
+    "name": "reviewBurgers",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "value": {
+      "type": "decimal"
+    },
+    "clientName": {
+      "type": "string"
+    },
+    "burger": {
+      "via": "review_burgers",
+      "model": "burgers"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "review_potatoes",
+  "info": {
+    "name": "ReviewPotatoes",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "value": {
+      "type": "decimal"
+    },
+    "clientName": {
+      "type": "string"
+    },
+    "potato": {
+      "via": "review_potatoes",
+      "model": "potatoes"
+    }
+  }
+}

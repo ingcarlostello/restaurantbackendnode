@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/review-drinks",
+      "handler": "review-drinks.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/review-drinks/count",
+      "handler": "review-drinks.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/review-drinks/:id",
+      "handler": "review-drinks.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/review-drinks",
+      "handler": "review-drinks.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/review-drinks/:id",
+      "handler": "review-drinks.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/review-drinks/:id",
+      "handler": "review-drinks.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/review-hot-dogs",
+      "handler": "review-hot-dogs.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/review-hot-dogs/count",
+      "handler": "review-hot-dogs.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/review-hot-dogs/:id",
+      "handler": "review-hot-dogs.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/review-hot-dogs",
+      "handler": "review-hot-dogs.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/review-hot-dogs/:id",
+      "handler": "review-hot-dogs.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/review-hot-dogs/:id",
+      "handler": "review-hot-dogs.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

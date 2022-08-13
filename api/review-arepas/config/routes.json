@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/review-arepas",
+      "handler": "review-arepas.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/review-arepas/count",
+      "handler": "review-arepas.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/review-arepas/:id",
+      "handler": "review-arepas.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/review-arepas",
+      "handler": "review-arepas.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/review-arepas/:id",
+      "handler": "review-arepas.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/review-arepas/:id",
+      "handler": "review-arepas.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/review-chikens",
+      "handler": "review-chiken.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/review-chikens/count",
+      "handler": "review-chiken.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/review-chikens/:id",
+      "handler": "review-chiken.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/review-chikens",
+      "handler": "review-chiken.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/review-chikens/:id",
+      "handler": "review-chiken.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/review-chikens/:id",
+      "handler": "review-chiken.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "review_hot_dogs",
+  "info": {
+    "name": "ReviewHotDogs",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "value": {
+      "type": "decimal"
+    },
+    "clientName": {
+      "type": "string"
+    },
+    "hot_dog": {
+      "via": "review_hot_dogs",
+      "model": "hot-dogs"
+    }
+  }
+}

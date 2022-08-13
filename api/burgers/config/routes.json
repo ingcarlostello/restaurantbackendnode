@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/burgers",
+      "handler": "burgers.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/burgers/count",
+      "handler": "burgers.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/burgers/:id",
+      "handler": "burgers.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/burgers",
+      "handler": "burgers.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/burgers/:id",
+      "handler": "burgers.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/burgers/:id",
+      "handler": "burgers.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
